@@ -27,11 +27,13 @@
       font-size: 1.2em;
       margin-bottom: 0.25em; /* Reduced further */
       opacity: 0.8;
-      letter-spacing: -0.05em; 
+      letter-spacing: -0.05em;
     }
 
     .social-links {
       display: flex;
+      justify-content: center; /* Center social links horizontally */
+      margin-top: 2em; /* Add some space above the social links */
     }
 
     button {
@@ -52,6 +54,23 @@
       transform: scale(1.05);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
+
+    /* Animation for the "Projects" button */
+    .projects-button {
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
   </style>
 </head>
 <body>
@@ -64,7 +83,8 @@
     <a href="https://discord.com/users/1031286517949268062" target="_blank"><button>Discord</button></a>
     <a href="https://github.com/asteroidsigma" target="_blank"><button>Github</button></a>
     <a href="https://www.twitch.tv/0dark_vo1d" target="_blank"><button>Twitch</button></a>
-    <a href="projects.html"><button>Projects</button></a> </div>
+    <a href="projects.html"><button class="projects-button">Projects</button></a>
+  </div>
 
 </body>
 </html>
